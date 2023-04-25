@@ -1,0 +1,61 @@
+
+
+    char nome[21];
+    int senha = 12;
+    char instituicao[20];
+    char letra = 'a';
+
+int main(){
+    system("color a");
+    int opcao;
+
+    //Menu inicial
+    printf("BEM VINDO \nEscolha uma opcao\
+           \n1-Login \
+           \n2-Cadastro \
+           \n3-Sair\
+           \n>>");
+    scanf("%d",&opcao);
+
+    switch(opcao){
+        case 1:
+            printf("LOGANDO\n");
+
+            char letrad;
+            int senhad;
+            system("cls");
+
+            printf("digite uma letra: ");
+            scanf("%s", &letrad);
+            printf("Digite uma senha: ");
+            scanf("%d", &senhad);
+
+  if(letra == letrad && senha == senhad){
+    printf("login valido");
+  }else{
+    printf("login invalido");
+  }
+        break;
+        case 2:
+            printf("Cadastrando \n");
+        break;
+        case 3:
+            printf("saindo\n");
+        break;
+        default:
+            printf("digitou errado ");
+        break;
+}
+
+   /* //Menu principal
+    printf("\n\nO que deseja fazer? \
+           \n1-Perfil \
+           \n2-Tarefas \
+           \n3-Materias\
+           \n4-Planos de estudos\
+           \n5-Visao geral\
+           \n6-configursao\
+           \n7-Encerrar");
+}*/
+
+}
