@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int ano, anoh;
+
+    printf("digite seu ano de nascimento: ");
+    scanf("%d", &ano);
+    printf("digite ano que estamos: ");
+    scanf("%d", &anoh);
+
+    int idade = anoh - ano;
+
+    if (idade>=16){
+        printf("Voce tem direito de votar");
+    }else{
+    printf("voce nao tem direito de votar, mas tem direito de mudar de genero \n");
+    }
+    return 0;
+}
