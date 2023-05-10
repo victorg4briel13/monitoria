@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float altura, pesoIdeal;
+    int sesgu;
+
+
+    printf("Digite sua altura: ");
+    scanf("%f", &altura);
+    printf("\nEscolha uma opcao de sexo: \n1 - MASCULINO \n2 - FEMININO \n3 - NAO BINARIO \n");
+    scanf("%d", &sesgu);
+
+    if(sesgu == 1){
+        pesoIdeal = (72.7 * altura) - 58;
+    }else if(sesgu == 2){
+        pesoIdeal = (62.1 * altura) - 44.7;
+    }else if(sesgu == 3){
+        printf("reveja as escolhas da sua vida");
+        printf("\nEscolha uma opcao de sexo: \n1 - MASCULINO \n2 - FEMININO ");
+        scanf("%i", &sesgu);
+
+        if(sesgu == 1){
+            pesoIdeal = (72.7 * altura) - 58;
+        }else if(sesgu == 2){
+            pesoIdeal = (62.1 * altura) - 44.7;
+        }else{
+            printf("opcao invalida");
+        }
+    }
+    printf("seu peso ideal eh: %.2f", pesoIdeal);
+}
